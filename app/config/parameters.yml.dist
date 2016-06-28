@@ -18,10 +18,12 @@ parameters:
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    campaignchain_dev:      false
     debug_toolbar:          true
     debug_redirects:        false
     use_assetic_controller: true
 
     router.request_context.host: localhost
     router.request_context.scheme: http
+
+    campaignchain.dev_mode:                 false
+    campaignchain.max_date_interval:    '+2 years'
