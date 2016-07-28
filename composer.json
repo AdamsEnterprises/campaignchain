@@ -1,5 +1,5 @@
 {
-    "name": "campaignchain/campaignchain-ce",
+    "name": "campaignchain/campaignchain",
     "description": "CampaignChain Community Edition",
     "version": "dev-master",
     "type": "project",
@@ -11,7 +11,7 @@
     "homepage": "http://www.campaignchain.com",
     "support": {
         "email": "support@campaignchain.com",
-        "issues": "https://github.com/CampaignChain/campaignchain-ce/issues",
+        "issues": "https://github.com/CampaignChain/campaignchain/issues",
         "docs": "http://docs.campaignchain.com"
     },
     "authors": [
@@ -30,6 +30,7 @@
         "packagist/yuicompressor-bin": "2.4.8",
         "packagist/cssembed-bin": "0.4.5",
         "campaignchain/core": "dev-master",
+        "campaignchain/update": "dev-master",
         "campaignchain/campaign-scheduled": "dev-master",
         "campaignchain/campaign-template": "dev-master",
         "campaignchain/campaign-repeating": "dev-master",
@@ -40,8 +41,8 @@
         "campaignchain/activity-gotowebinar": "dev-master",
         "campaignchain/activity-mailchimp": "dev-master",
         "campaignchain/activity-slideshare": "dev-master",
-        "campaignchain/location-website": "dev-master",
         "campaignchain/report-analytics-metrics-per-activity": "dev-master",
+        "campaignchain/report-analytics-metrics-per-location": "dev-master",
         "campaignchain/report-analytics-cta-tracking": "dev-master",
         "campaignchain/report-google-analytics": "dev-master",
         "campaignchain/security-authentication-server-oauth": "dev-master",
@@ -60,24 +61,33 @@
         ],
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "CampaignChain\\CoreBundle\\Composer\\ScriptHandler::initApp",
+            "CampaignChain\\CoreBundle\\Composer\\ScriptHandler::initKernel",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "CampaignChain\\CoreBundle\\Composer\\ScriptHandler::registerModules",
-            "CampaignChain\\CoreBundle\\Composer\\ScriptHandler::enableInstallMode",
-            "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall"
+            "app/console campaignchain:update:kernel",
+            "app/console campaignchain:update:schema",
+            "app/console campaignchain:update:module",
+            "app/console campaignchain:update:schema",
+            "app/console campaignchain:update:data",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall",
+            "CampaignChain\\CoreBundle\\Composer\\ScriptHandler::enableInstallMode"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "CampaignChain\\CoreBundle\\Composer\\ScriptHandler::initApp",
+            "CampaignChain\\CoreBundle\\Composer\\ScriptHandler::initKernel",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
+            "app/console campaignchain:update:kernel",
+            "app/console campaignchain:update:schema",
+            "app/console campaignchain:update:module",
+            "app/console campaignchain:update:schema",
+            "app/console campaignchain:update:data",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall"
         ]
     },
