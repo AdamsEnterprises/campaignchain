@@ -47,7 +47,7 @@
         "campaignchain/report-google-analytics": "dev-master",
         "campaignchain/security-authentication-server-oauth": "dev-master",
         "campaignchain/activity-xing": "dev-master",
-        "cnerta/breadcrumb-bundle": "^2.1"
+        "cnerta/breadcrumb-bundle": "2.1.*"
     },
     "require-dev": {
         "campaignchain/dev-tools": "dev-master",
