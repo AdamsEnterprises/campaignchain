@@ -4216,12 +4216,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "8f0fa74b901228b2205517a91941f8d4e7b27574"
+                "reference": "0558ba1cf456d51e623eb60d99f1183c6875db8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/8f0fa74b901228b2205517a91941f8d4e7b27574",
-                "reference": "8f0fa74b901228b2205517a91941f8d4e7b27574",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/0558ba1cf456d51e623eb60d99f1183c6875db8e",
+                "reference": "0558ba1cf456d51e623eb60d99f1183c6875db8e",
                 "shasum": ""
             },
             "require": {
@@ -4296,7 +4296,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2016-09-05 16:10:05"
+            "time": "2016-09-06 16:37:54"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -8217,16 +8217,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.8.10",
+            "version": "v2.8.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "84e8eb7690eea267526c3d40050b4c54f1878b7a"
+                "reference": "f588c92c3e263b2eaa2f96a7b1359199eb209b3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/84e8eb7690eea267526c3d40050b4c54f1878b7a",
-                "reference": "84e8eb7690eea267526c3d40050b4c54f1878b7a",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/f588c92c3e263b2eaa2f96a7b1359199eb209b3d",
+                "reference": "f588c92c3e263b2eaa2f96a7b1359199eb209b3d",
                 "shasum": ""
             },
             "require": {
@@ -8347,7 +8347,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-09-02 20:40:06"
+            "time": "2016-09-07 02:04:25"
         },
         {
             "name": "twbs/bootstrap",
