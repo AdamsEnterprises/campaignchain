@@ -1415,13 +1415,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CampaignChain/form-type-autocomplete.git",
-                "reference": "b7adba8a38f5da644657d332d36933e015d55b14"
+                "reference": "4dafc7b74b3882ae6cc7cbd5d026f656604a1097"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CampaignChain/form-type-autocomplete/zipball/b7adba8a38f5da644657d332d36933e015d55b14",
-                "reference": "b7adba8a38f5da644657d332d36933e015d55b14",
+                "url": "https://api.github.com/repos/CampaignChain/form-type-autocomplete/zipball/4dafc7b74b3882ae6cc7cbd5d026f656604a1097",
+                "reference": "4dafc7b74b3882ae6cc7cbd5d026f656604a1097",
                 "shasum": ""
+            },
+            "require": {
+                "campaignchain/form-type-textarea-count": "dev-master"
             },
             "type": "campaignchain-symfony",
             "extra": {
@@ -1454,7 +1457,7 @@
             "keywords": [
                 "campaignchain"
             ],
-            "time": "2016-10-19 12:32:39"
+            "time": "2016-10-19 13:14:46"
         },
         {
             "name": "campaignchain/form-type-textarea-count",
@@ -1462,12 +1465,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CampaignChain/form-type-textarea-count.git",
-                "reference": "59d8d6f67f1bd7924ef38cc083cd52edc0b5b848"
+                "reference": "748096452f8349b640315a236803b2c9951ca707"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CampaignChain/form-type-textarea-count/zipball/59d8d6f67f1bd7924ef38cc083cd52edc0b5b848",
-                "reference": "59d8d6f67f1bd7924ef38cc083cd52edc0b5b848",
+                "url": "https://api.github.com/repos/CampaignChain/form-type-textarea-count/zipball/748096452f8349b640315a236803b2c9951ca707",
+                "reference": "748096452f8349b640315a236803b2c9951ca707",
                 "shasum": ""
             },
             "type": "campaignchain-symfony",
@@ -1501,7 +1504,7 @@
             "keywords": [
                 "campaignchain"
             ],
-            "time": "2016-10-19 12:25:40"
+            "time": "2016-10-19 13:11:58"
         },
         {
             "name": "campaignchain/hook-assignee",
