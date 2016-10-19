@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "54f26e19bffcb8580776eb3145f6015d",
-    "content-hash": "224950f7557cb6450f11e1a5021a84b7",
+    "hash": "6efa9fb08f5d168e8bddcaa682bf00b0",
+    "content-hash": "80e82279285d2449a5f6b523ec00204a",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1301,21 +1301,22 @@
         },
         {
             "name": "campaignchain/core",
-            "version": "dev-master",
+            "version": "dev-campaignchain-142",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CampaignChain/core.git",
-                "reference": "99f6f9d5d6031093e3ce617c5cbc00316fb28bee"
+                "reference": "884223e69a54470332c6240ad67959e6e8d47364"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CampaignChain/core/zipball/99f6f9d5d6031093e3ce617c5cbc00316fb28bee",
-                "reference": "99f6f9d5d6031093e3ce617c5cbc00316fb28bee",
+                "url": "https://api.github.com/repos/CampaignChain/core/zipball/884223e69a54470332c6240ad67959e6e8d47364",
+                "reference": "884223e69a54470332c6240ad67959e6e8d47364",
                 "shasum": ""
             },
             "require": {
                 "bmatzner/fontawesome-bundle": "dev-master",
                 "braincrafted/bootstrap-bundle": "2.1.2",
+                "campaignchain/form-type-textarea-count": "dev-master",
                 "campaignchain/location-website": "dev-master",
                 "components/jquery": "1.11.*",
                 "doctrine/doctrine-bundle": "~1.2",
@@ -1406,7 +1407,101 @@
             "keywords": [
                 "campaignchain"
             ],
-            "time": "2016-10-18 13:19:22"
+            "time": "2016-10-19 12:45:39"
+        },
+        {
+            "name": "campaignchain/form-type-autocomplete",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CampaignChain/form-type-autocomplete.git",
+                "reference": "b7adba8a38f5da644657d332d36933e015d55b14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CampaignChain/form-type-autocomplete/zipball/b7adba8a38f5da644657d332d36933e015d55b14",
+                "reference": "b7adba8a38f5da644657d332d36933e015d55b14",
+                "shasum": ""
+            },
+            "type": "campaignchain-symfony",
+            "extra": {
+                "campaignchain": {
+                    "kernel": {
+                        "classes": [
+                            "CampaignChain\\AutocompleteFormTypeBundle\\CampaignChainAutocompleteFormTypeBundle"
+                        ]
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CampaignChain\\AutocompleteFormTypeBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "CampaignChain, Inc.",
+                    "email": "info@campaignchain.com",
+                    "homepage": "http://www.campaignchain.com"
+                }
+            ],
+            "description": "An autocomplete textarea form field based on At.js plus character count.",
+            "homepage": "http://www.campaignchain.com",
+            "keywords": [
+                "campaignchain"
+            ],
+            "time": "2016-10-19 12:32:39"
+        },
+        {
+            "name": "campaignchain/form-type-textarea-count",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CampaignChain/form-type-textarea-count.git",
+                "reference": "59d8d6f67f1bd7924ef38cc083cd52edc0b5b848"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CampaignChain/form-type-textarea-count/zipball/59d8d6f67f1bd7924ef38cc083cd52edc0b5b848",
+                "reference": "59d8d6f67f1bd7924ef38cc083cd52edc0b5b848",
+                "shasum": ""
+            },
+            "type": "campaignchain-symfony",
+            "extra": {
+                "campaignchain": {
+                    "kernel": {
+                        "classes": [
+                            "CampaignChain\\TextareaCountFormTypeBundle\\CampaignChainTextareaCountFormTypeBundle"
+                        ]
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CampaignChain\\TextareaCountFormTypeBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "CampaignChain, Inc.",
+                    "email": "info@campaignchain.com",
+                    "homepage": "http://www.campaignchain.com"
+                }
+            ],
+            "description": "A textarea with character counter for max chars.",
+            "homepage": "http://www.campaignchain.com",
+            "keywords": [
+                "campaignchain"
+            ],
+            "time": "2016-10-19 12:25:40"
         },
         {
             "name": "campaignchain/hook-assignee",
@@ -2238,20 +2333,21 @@
         },
         {
             "name": "campaignchain/operation-facebook",
-            "version": "dev-master",
+            "version": "dev-campaignchain-142",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CampaignChain/operation-facebook.git",
-                "reference": "dc85faee7654336ef23aa76f387ce576518dd917"
+                "reference": "a7c2833fd3b0d672c90dc26978c0af5bfc37b05b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CampaignChain/operation-facebook/zipball/dc85faee7654336ef23aa76f387ce576518dd917",
-                "reference": "dc85faee7654336ef23aa76f387ce576518dd917",
+                "url": "https://api.github.com/repos/CampaignChain/operation-facebook/zipball/a7c2833fd3b0d672c90dc26978c0af5bfc37b05b",
+                "reference": "a7c2833fd3b0d672c90dc26978c0af5bfc37b05b",
                 "shasum": ""
             },
             "require": {
-                "campaignchain/activity-facebook": "dev-master"
+                "campaignchain/activity-facebook": "dev-master",
+                "campaignchain/form-type-autocomplete": "dev-master"
             },
             "type": "campaignchain-operation",
             "extra": {
@@ -2285,7 +2381,7 @@
                 "campaignchain",
                 "facebook"
             ],
-            "time": "2016-10-02 18:00:54"
+            "time": "2016-10-19 12:45:39"
         },
         {
             "name": "campaignchain/operation-gotowebinar",
@@ -2341,20 +2437,21 @@
         },
         {
             "name": "campaignchain/operation-linkedin",
-            "version": "dev-master",
+            "version": "dev-campaignchain-142",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CampaignChain/operation-linkedin.git",
-                "reference": "3b14ebea1011372ece35b089719f5c519d9b488f"
+                "reference": "510d07673d5c89c7bbb983eb77df61313dc81abf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CampaignChain/operation-linkedin/zipball/3b14ebea1011372ece35b089719f5c519d9b488f",
-                "reference": "3b14ebea1011372ece35b089719f5c519d9b488f",
+                "url": "https://api.github.com/repos/CampaignChain/operation-linkedin/zipball/510d07673d5c89c7bbb983eb77df61313dc81abf",
+                "reference": "510d07673d5c89c7bbb983eb77df61313dc81abf",
                 "shasum": ""
             },
             "require": {
-                "campaignchain/activity-linkedin": "dev-master"
+                "campaignchain/activity-linkedin": "dev-master",
+                "campaignchain/form-type-textarea-count": "dev-master"
             },
             "type": "campaignchain-operation",
             "extra": {
@@ -2388,7 +2485,7 @@
                 "campaignchain",
                 "linkedin"
             ],
-            "time": "2016-10-02 18:00:54"
+            "time": "2016-10-19 12:45:39"
         },
         {
             "name": "campaignchain/operation-mailchimp",
@@ -2501,20 +2598,21 @@
         },
         {
             "name": "campaignchain/operation-twitter",
-            "version": "dev-master",
+            "version": "dev-campaignchain-142",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CampaignChain/operation-twitter.git",
-                "reference": "6c748737d102bf5dfff37538b8fc2b848ef14066"
+                "reference": "b66e1648915646e7e61ca31001f3ab35e7cc9554"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CampaignChain/operation-twitter/zipball/6c748737d102bf5dfff37538b8fc2b848ef14066",
-                "reference": "6c748737d102bf5dfff37538b8fc2b848ef14066",
+                "url": "https://api.github.com/repos/CampaignChain/operation-twitter/zipball/b66e1648915646e7e61ca31001f3ab35e7cc9554",
+                "reference": "b66e1648915646e7e61ca31001f3ab35e7cc9554",
                 "shasum": ""
             },
             "require": {
                 "campaignchain/activity-twitter": "dev-master",
+                "campaignchain/form-type-autocomplete": "dev-master",
                 "guzzle/guzzle": "~3.9"
             },
             "type": "campaignchain-operation",
@@ -2550,20 +2648,20 @@
                 "operation",
                 "twitter"
             ],
-            "time": "2016-10-02 18:00:54"
+            "time": "2016-10-19 12:45:39"
         },
         {
             "name": "campaignchain/operation-xing",
-            "version": "dev-master",
+            "version": "dev-campaignchain-142",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CampaignChain/operation-xing.git",
-                "reference": "02fb4293e451e62c4bb16d52a1c163160b0b94d9"
+                "reference": "7ade0d49d39d50eb52b5ec1299065ed49414c72d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CampaignChain/operation-xing/zipball/02fb4293e451e62c4bb16d52a1c163160b0b94d9",
-                "reference": "02fb4293e451e62c4bb16d52a1c163160b0b94d9",
+                "url": "https://api.github.com/repos/CampaignChain/operation-xing/zipball/7ade0d49d39d50eb52b5ec1299065ed49414c72d",
+                "reference": "7ade0d49d39d50eb52b5ec1299065ed49414c72d",
                 "shasum": ""
             },
             "require": {
@@ -2604,7 +2702,7 @@
             "keywords": [
                 "campaignchain"
             ],
-            "time": "2016-10-02 18:00:54"
+            "time": "2016-10-19 12:45:39"
         },
         {
             "name": "campaignchain/report-analytics-cta-tracking",
@@ -9133,17 +9231,20 @@
         },
         {
             "name": "campaignchain/operation-social-media",
-            "version": "dev-master",
+            "version": "dev-campaignchain-142",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CampaignChain/operation-social-media.git",
-                "reference": "51a0497d35b65f2f3c596df8c19dc7721a804485"
+                "reference": "7708d46c7713286e16f5c76aa70bb3b41cdbaa03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CampaignChain/operation-social-media/zipball/51a0497d35b65f2f3c596df8c19dc7721a804485",
-                "reference": "51a0497d35b65f2f3c596df8c19dc7721a804485",
+                "url": "https://api.github.com/repos/CampaignChain/operation-social-media/zipball/7708d46c7713286e16f5c76aa70bb3b41cdbaa03",
+                "reference": "7708d46c7713286e16f5c76aa70bb3b41cdbaa03",
                 "shasum": ""
+            },
+            "require": {
+                "campaignchain/form-type-textarea-count": "dev-master"
             },
             "type": "campaignchain-operation",
             "extra": {
@@ -9180,10 +9281,47 @@
             "keywords": [
                 "campaignchain"
             ],
-            "time": "2016-09-16 14:16:15"
+            "time": "2016-10-19 12:45:39"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "dev-master",
+            "alias_normalized": "9999999-dev",
+            "version": "dev-campaignchain-142",
+            "package": "campaignchain/core"
+        },
+        {
+            "alias": "dev-master",
+            "alias_normalized": "9999999-dev",
+            "version": "dev-campaignchain-142",
+            "package": "campaignchain/operation-twitter"
+        },
+        {
+            "alias": "dev-master",
+            "alias_normalized": "9999999-dev",
+            "version": "dev-campaignchain-142",
+            "package": "campaignchain/operation-facebook"
+        },
+        {
+            "alias": "dev-master",
+            "alias_normalized": "9999999-dev",
+            "version": "dev-campaignchain-142",
+            "package": "campaignchain/operation-linkedin"
+        },
+        {
+            "alias": "dev-master",
+            "alias_normalized": "9999999-dev",
+            "version": "dev-campaignchain-142",
+            "package": "campaignchain/operation-xing"
+        },
+        {
+            "alias": "dev-master",
+            "alias_normalized": "9999999-dev",
+            "version": "dev-campaignchain-142",
+            "package": "campaignchain/operation-social-media"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "campaignchain/core": 20,
@@ -9208,7 +9346,12 @@
         "amariki/data-test": 20,
         "amariki/data-demo": 20,
         "campaignchain/activity-social-media": 20,
-        "campaignchain/activity-ezplatform": 20
+        "campaignchain/activity-ezplatform": 20,
+        "campaignchain/operation-twitter": 20,
+        "campaignchain/operation-facebook": 20,
+        "campaignchain/operation-linkedin": 20,
+        "campaignchain/operation-xing": 20,
+        "campaignchain/operation-social-media": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -53,13 +53,14 @@
         "campaignchain/dev-tools": "dev-master",
         "amariki/data-test": "dev-master",
         "amariki/data-demo": "dev-master",
-        "campaignchain/activity-social-media": "dev-campaignchain-142 as dev-master",
+        "campaignchain/activity-social-media": "dev-master",
         "campaignchain/activity-ezplatform": "dev-master",
         "campaignchain/core": "dev-campaignchain-142 as dev-master",
-        "campaignchain/activity-twitter": "dev-campaignchain-142 as dev-master",
-        "campaignchain/activity-facebook": "dev-campaignchain-142 as dev-master",
-        "campaignchain/activity-linkedin": "dev-campaignchain-142 as dev-master",
-        "campaignchain/activity-xing": "dev-campaignchain-142 as dev-master"
+        "campaignchain/operation-twitter": "dev-campaignchain-142 as dev-master",
+        "campaignchain/operation-facebook": "dev-campaignchain-142 as dev-master",
+        "campaignchain/operation-linkedin": "dev-campaignchain-142 as dev-master",
+        "campaignchain/operation-xing": "dev-campaignchain-142 as dev-master",
+        "campaignchain/operation-social-media": "dev-campaignchain-142 as dev-master"
     },
     "scripts": {
         "post-root-package-install": [
